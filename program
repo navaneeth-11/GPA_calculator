@@ -1,1 +1,465 @@
 
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+ int main()
+{
+int grad(int);
+printf("                                          *WELCOME TO MARI SOFTWARE *           \n");
+printf("KNOW YOUR GPA HERE \n");
+printf("enter the semister of ece branch \n"); 
+int n;
+scanf("%d",&n);
+if(n<=8)
+{
+
+switch(n)
+{
+	case 1:{
+	printf("                                                     HI,PLEASE ENTER MARKS FOE 100 \n");
+	int ma,ph,ch,cl,en,phl,cll,ml;
+	int a1,a2,a3,a4,a5,a6,a7,a8;
+	float sum=0;
+	float avg;
+	printf("enter the marks of maths=");
+	scanf("%d",&ma);
+	a1=grad(ma);
+	printf("enter of marks of physics=");
+	scanf("%d",&ph);
+	a2=grad(ph);
+	printf("enter the marks of chemistry=");
+	scanf("%d",&ch);
+	a3=grad(ch);
+	printf("enter the marks of c language=");
+	scanf("%d",&cl);
+	a4=grad(cl);
+	printf("enter the marks of english=");
+	scanf("%d",&en);
+	a5=grad(en);
+	printf("enter the marks of workshop=");
+	scanf("%d",&ml);
+	a6=grad(ml);
+	printf("enter the marks of c language lab=");
+	scanf("%d",&cll);     
+	a7=grad(cll);
+	printf("enter the marks of physics lab=");
+	scanf("%d",&phl);
+	a8=grad(phl);
+	if((a1!=0)&&(a2!=0)&&(a3!=0)&&(a4!=0)&&(a5!=0)&&(a6!=0)&&(a7!=0)&&(a8!=0))
+	{
+	
+ sum=((a1*3)+(a2*3)+(a3*3)+(a4*3)+(a5*4)+(a6*2)+(a7*2)+(a8*2));
+ avg=sum/22;
+  printf("gpa=%0.2f",avg);
+  }
+else
+{
+	avg=0;
+	 printf("gpa=%0.2f",avg);
+}
+ 
+break;
+}
+ case 2:
+ 	{
+ 		printf("                                              HI,PLEASE ENTER MARKS FOE 100 \n");
+ 		int ma,eng,phy,bee,ecta,cpp,eg,ee,chl ;
+	int a1,a2,a3,a4,a5,a6,a7,a8,a9;
+	float sum=0;
+	float avg;
+	printf("enter the marks of maths=");
+	scanf("%d",&ma);
+	a1=grad(ma);
+	printf("enter of marks of physics=");
+	scanf("%d",&phy);
+	a2=grad(phy);
+	printf("enter the marks of chemistry lab=");
+	scanf("%d",&chl);
+	a3=grad(chl);
+	printf("enter the marks of cpp language=");
+	scanf("%d",&cpp);
+	a4=grad(cpp);
+	printf("enter the marks of english=");
+	scanf("%d",&eng);
+	a5=grad(eng);
+	printf("enter the marks of electrical and electronic workshop=");
+	scanf("%d",&ee);
+	a6=grad(ee);
+	printf("enter the marks of basic electrical engineering=");
+	scanf("%d",&bee);
+	a7=grad(bee);
+	printf("enter the marks of electrical circuit theory=");
+	scanf("%d",&ecta);
+	a8=grad(ecta);
+	printf("enter the marks of engineering graphics=");
+	scanf("%d",&eg);
+	a9=grad(eg);
+	if(a1!=0&&a2!=0&&a3!=0&&a4!=0&&a5!=0&&a6!=0&&a7!=0&&a8!=0)
+	{
+	
+ sum=((a1*3)+(a2*3)+(a3*2)+(a4*3)+(a5*4)+(a6*2)+(a7*3)+(a8*3)+(a9*3));
+ avg=sum/26;
+  printf("gpa=%0.2f",avg);
+  
+}
+else
+{
+	avg=0;
+	 printf("gpa=%0.2f",avg);
+}
+ 
+break;
+ 	
+	  }
+	 
+	 case 3:
+	 	{
+	 		printf("                                       HI,PLEASE ENTER MARKS FOE 100 \n");
+	int ma3,ss,edc,dld,ew,dldl,edcl,beel;
+	int a1,a2,a3,a4,a5,a6,a7,a8;
+	float sum=0;
+	float avg;
+	printf("enter the marks of maths3=");
+	scanf("%d",&ma3);
+	a1=grad(ma3);
+	printf("enter of marks of signal and sysystem=");
+	scanf("%d",&ss);
+	a2=grad(ss);
+	printf("enter the marks of electronic devices and circuit=");
+	scanf("%d",&edc);
+	a3=grad(edc);
+	printf("enter the marks of digital logic design=");
+	scanf("%d",&dld);
+	a4=grad(dld);
+	printf("enter the marks of electromagnetic waves=");
+	scanf("%d",&ew);
+	a5=grad(ew);
+	printf("enter the marks of degital logic design lab=");
+	scanf("%d",&dldl);
+	a6=grad(dldl);
+	printf("enter the marks of electronic device and circuit lab=");
+	scanf("%d",&edcl);
+	a7=grad(edcl);
+	printf("enter the marks of basic electrical engneering lab=");
+	scanf("%d",&beel);
+	a8=grad(beel);
+	if((a1!=0)&&a2!=0&&a3!=0&&a4!=0&&a5!=0&&a6!=0&&a7!=0&&a8!=0)
+	{
+	
+ sum=((a1*3)+(a2*3)+(a3*4)+(a4*3)+(a5*4)+(a6*2)+(a7*2)+(a8*2));
+ avg=sum/23;
+  printf("gpa=%0.2f",avg);
+}
+else
+{
+	avg=0;
+	 printf("gpa=%0.2f",avg);
+}
+ break;
+
+		 }
+		 case 4:
+		 	{
+		printf("                                                   HI,PLEASE ENTER MARKS FOE 100 \n");
+	int ma4,ae,lic,ac,es,op,aecl,acl,cdsl;
+	int a1,a2,a3,a4,a5,a6,a7,a8,a9;
+	float sum=0;
+	float avg;
+	printf("enter the marks of maths4=");
+	scanf("%d",&ma4);
+	a1=grad(ma4);
+	printf("enter of marks of analog electronic circuit=");
+	scanf("%d",&ae);
+	a2=grad(ae);
+	printf("enter the marks of linear integrated circuit=");
+	scanf("%d",&lic);
+	a3=grad(lic);
+	printf("enter the marks of analog communication=");
+	scanf("%d",&ac);
+	a4=grad(ac);
+	printf("enter the marks of open elective 1=");
+	scanf("%d",&op);
+	a5=grad(op);
+	printf("enter the marks of environvent studies=");
+	scanf("%d",&es);
+	a6=grad(es);
+	printf("enter the marks of analog electronic circuit laboratory=");
+	scanf("%d",&aecl);
+	a7=grad(aecl);
+	printf("enter the marks of  analog communication laboratory=");
+	scanf("%d",&acl);
+	a8=grad(acl);
+	printf("enter the marks of circuit design and simulation laboratory=");
+	scanf("%d",&cdsl);
+	a9=grad(cdsl);
+	
+	if((a1!=0)&&a2!=0&&a3!=0&&a4!=0&&a5!=0&&a6!=0&&a7!=0&&a8!=0)
+	{
+	
+ sum=((a1*3)+(a2*3)+(a3*4)+(a4*3)+(a5*3)+(a6*3)+(a7*2)+(a8*2)+(a9*2));
+ avg=sum/25;
+  printf("gpa=%0.2f",avg);
+}
+else
+{
+	avg=0;
+	 printf("gpa=%0.2f",avg);
+}
+ 
+
+ 		
+	 break;
+		 		
+			 }
+			 case 5:
+			 	{
+		printf("                                                  HI,PLEASE ENTER MARKS FOE 100 \n");
+	int ma4,ae,lic,ac,es,op,aecl,acl,cdsl;
+	int a1,a2,a3,a4,a5,a6,a7,a8,a9;
+	float sum=0;
+	float avg;
+	printf("enter the marks of control system engneering=");
+	scanf("%d",&ma4);
+	a1=grad(ma4);
+	printf("enter of marks of digital signal processing=");
+	scanf("%d",&ae);
+	a2=grad(ae);
+	printf("enter the marks of antennas andwave propagation=");
+	scanf("%d",&lic);
+	a3=grad(lic);
+	printf("enter the marks of digital communication=");
+	scanf("%d",&ac);
+	a4=grad(ac);
+	printf("enter the marks of open elective 2=");
+	scanf("%d",&op);
+	a5=grad(op);
+	printf("enter the marks of transmission line and waveguide=");
+	scanf("%d",&es);
+	a6=grad(es);
+	printf("enter the marks of digital communication laboratory=");
+	scanf("%d",&aecl);
+	a7=grad(aecl);
+	printf("enter the marks of  analog digital signal processing laboratory =");
+	scanf("%d",&acl);
+	a8=grad(acl);
+	printf("enter the marks of  linear integrated circuit laboratory=");
+	scanf("%d",&cdsl);
+	a9=grad(cdsl);
+	
+	if((a1!=0)&&a2!=0&&a3!=0&&a4!=0&&a5!=0&&a6!=0&&a7!=0&&a8!=0&&a9!=0)
+	{
+	
+ sum=((a1*4)+(a2*3)+(a3*3)+(a4*3)+(a5*3)+(a6*3)+(a7*2)+(a8*2)+(a9*2));
+ avg=sum/25;
+  printf("gpa=%0.2f",avg);
+}
+else
+{
+	avg=0;
+	 printf("gpa=%0.2f",avg);
+}
+ 
+
+ 		
+	 
+			 		
+				 }
+break;
+
+
+case 6:
+	{
+			
+	printf("                                                     HI,PLEASE ENTER MARKS FOE 100 \n");
+	int mi,ecm,cm,pe1,ie,pe2,ml,mcl,cml,s;
+	int a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
+	float sum=0;
+	float avg;
+	printf("enter the marks of microprocessor and interfacing=");
+	scanf("%d",&mi);
+	a1=grad(mi);
+	printf("enter of marks of engineering economics and managment=");
+	scanf("%d",&ecm);
+	a2=grad(ecm);
+	printf("enter the marks of computational methods in ECE=");
+	scanf("%d",&cm);
+	a3=grad(cm);
+	printf("enter the marks of programe elective 1=");
+	scanf("%d",&pe1);
+	a4=grad(pe1);
+	printf("enter the marks of interdisciplary elective 1=");
+	scanf("%d",&ie);
+	a5=grad(ie);
+	printf("enter the marks of programe elective 2=");
+	scanf("%d",&pe2);
+	a6=grad(pe2);
+	printf("enter the marks of microprocessor lab=");
+	scanf("%d",&ml);     
+	a7=grad(ml);
+	printf("enter the marks of modren communication lab=");
+	scanf("%d",&mcl);
+	a8=grad(mcl);
+    printf("enter the marks of computational mechanics lab=");
+	scanf("%d",&cml);
+	a9=grad(cml);
+	printf("enter the marks of seminar=");
+	scanf("%d",&s);
+	a10=grad(s);
+	
+	if((a1!=0)&&(a2!=0)&&(a3!=0)&&(a4!=0)&&(a5!=0)&&(a6!=0)&&(a7!=0)&&(a8!=0))
+	{
+	
+ sum=((a1*3)+(a2*3)+(a3*3)+(a4*3)+(a5*3)+(a6*3)+(a7*2)+(a8*2)+(a9*2)+(a10*1));
+ avg=sum/25;
+  printf("gpa=%0.2f",avg);
+  }
+else
+{
+	avg=0;
+	 printf("gpa=%0.2f",avg);
+}
+ 
+break;}
+
+case 7:
+	{
+			
+	printf("                                                     HI,PLEASE ENTER MARKS FOE 100 \n");
+	int vl,me,peh,pe1,pe2,ie,mp,vll,dp,si;
+	int a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
+	float sum=0;
+	float avg;
+	printf("enter the marks of basic VLSI=");
+	scanf("%d",&vl);
+	a1=grad(vl);
+	printf("enter of marks of microwave engineering =");
+	scanf("%d",&me);
+	a2=grad(me);
+	printf("enter the marks of professional ethics and human values=");
+	scanf("%d",&peh);
+	a3=grad(peh);
+	printf("enter the marks of programe elective 3=");
+	scanf("%d",&pe1);
+	a4=grad(pe1);
+	printf("enter the marks of interdisciplary elective 1=");
+	scanf("%d",&ie);
+	a5=grad(ie);
+	printf("enter the marks of programe elective 4=");
+	scanf("%d",&pe2);
+	a6=grad(pe2);
+	printf("enter the marks of mini project=");
+	scanf("%d",&mp);     
+	a7=grad(mp);
+	printf("enter the marks of VLSI DESIGN lab=");
+	scanf("%d",&vll);
+	a8=grad(vll);
+    printf("enter the marks of design practice=");
+	scanf("%d",&dp);
+	a9=grad(dp);
+	printf("enter the marks of summer internship=");
+	scanf("%d",&si);
+	a10=grad(si);
+	
+	if((a1!=0)&&(a2!=0)&&(a3!=0)&&(a4!=0)&&(a5!=0)&&(a6!=0)&&(a7!=0)&&(a8!=0))
+	{
+	
+ sum=((a1*3)+(a2*3)+(a3*1)+(a4*3)+(a5*3)+(a6*3)+(a7*2)+(a8*2)+(a9*3)+(a10*2));
+ avg=sum/25;
+  printf("gpa=%0.2f",avg);
+  }
+else
+{
+	avg=0;
+	 printf("gpa=%0.2f",avg);
+}
+ 
+break;}
+
+case 8:{
+	printf("                                                     HI,PLEASE ENTER MARKS FOE 100 \n");
+	int pe1,pe2,ie,cv,pw;
+	int a1,a2,a3,a4,a5;
+	float sum=0;
+	float avg;
+	printf("enter the marks of programe elective 5=");
+	scanf("%d",&pe1);
+	a1=grad(pe1);
+	printf("enter of marks of programe elective 6=");
+	scanf("%d",&pe2);
+	a2=grad(pe2);
+	printf("enter the marks of interdisciplinary elective 3=");
+	scanf("%d",&ie);
+	a3=grad(ie);
+	printf("enter the marks of comprehensive viva=");
+	scanf("%d",&cv);
+	a4=grad(cv);
+	printf("enter the marks of project work=");
+	scanf("%d",&pw);
+	a5=grad(pw);
+	
+	if((a1!=0)&&(a2!=0)&&(a3!=0)&&(a4!=0)&&(a5!=0))
+	{
+	
+ sum=((a1*3)+(a2*3)+(a3*3)+(a4*2)+(a5*8));
+ avg=sum/19;
+  printf("gpa=%0.2f",avg);
+  }
+else
+{
+	avg=0;
+	 printf("gpa=%0.2f",avg);
+}
+ 
+break;
+}
+
+	}
+	}
+else
+{
+	printf("INVALID");
+}
+
+return 0;
+}
+int grad(int marks)
+{
+	if(marks<=100&&marks>=90)
+	{
+		return 10;
+	}
+	
+	else if(marks<=89&&marks>=80)
+	{
+		return 9;
+	}
+	else if(marks<=79&&marks>=70)
+	{
+		return 8;
+	}
+	else if(marks<=69&&marks>=60)
+	{
+		return 7;
+	}
+	else if(marks<=59&&marks>=50)
+	{
+		return 6;
+	}
+	else if(marks<=49&&marks>=45)
+	{
+		return 5;
+	}
+	else if(marks<=44&&marks>=40)
+	{
+		return 4;
+	}
+	else if(marks<40&&marks>=1)
+	{
+		return 0;
+	}
+	else if(marks>100)
+	{
+		return  printf("                                             invalid \n");
+	}
+}
